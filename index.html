@@ -1,219 +1,286 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="AdaptDiffuser: Diffusion Models as Adaptive Self-evolving Planners."
+    />
+    <meta name="keywords" content="Reinforcement Learning, Diffusion Model, Trajectory Optimization" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      AdaptDiffuser: Diffusion Models as Adaptive Self-evolving Planners
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./public/index.css" rel="stylesheet" />
+    <link href="./public/media.css" rel="stylesheet" />
+    <link href="./public/sidebars.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>MSMAR-RL: Multi-Step Masked-Attention Recovery Reinforcement Learning for Safe Maneuver Decision in High-Speed Pursuit-Evasion Game</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-</head>
-<body>
-
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">MSMAR-RL: Multi-Step Masked-Attention Recovery Reinforcement Learning for Safe Maneuver Decision in High-Speed Pursuit-Evasion Game</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR 1 PERSONAL LINK" target="_blank">Yang Zhao</a><sup>*</sup><sup>1</sup>,</span>
-                <span class="author-block">
-                  <a href="FIRST AUTHOR 2 PERSONAL LINK" target="_blank">Wenzhe Zhao</a><sup>*</sup><sup>1</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xuelong Li</a><sup>2</sup>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>School of Artificial Intelligence, OPtics and ElectroNics (iOPEN), Northwestern Polytechnical University, Xi’an 710072, P. R. China<br><sup>2</sup>Institute of Artificial Intelligence (TeleAI), China Telecom, P. R. China<br>International Joint Conference on Artificial Intelligence 2025</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
+  <body>
+    <div class="sidebarsWrapper">
+      <div class="sidebars">
+        <a class="barWrapper" clear href="#abstract-a" id="bar2"
+          ><span>Abstract</span>
+          <div class="bar"></div
+        ></a>
+        <a class="barWrapper" clear href="#tr2-a" id="bar3"
+          ><span>Framework of MSMAR-RL</span>
+          <div class="bar"></div
+        ></a>
+        <a class="barWrapper" clear href="#results-a" id="bar4"
+          ><span>Results</span>
+          <div class="bar"></div
+        ></a>
+<!--        <a class="barWrapper" clear href="#attn-a" id="bar5"-->
+<!--          ><span>Attention Analysis</span>-->
+<!--          <div class="bar"></div-->
+<!--        ></a>-->
+      </div>
+    </div>
+    <main class="content">
+      <section class="heading" style="text-align: center!important;">
+        <h1 class="title">
+            MSMAR-RL: Multi-Step Masked-Attention Recovery Reinforcement Learning for Safe Maneuver Decision in High-Speed Pursuit-Evasion Game
+        </h1>
+        <section class="authors">
+          <ul>
+            <li>
+              <span
+                ><a
+                  href=""
+                  rel="noreferrer"
+                  target="_blank"
+              >Yang Zhao</a
+                ><sup>*</sup><sup>1</sup></span
+              >
+            </li>
+            <li>
+              <span
+                ><a
+                  href=""
+                  rel="noreferrer"
+                  target="_blank"
+                  >Wenzhe Zhao</a
+                ><sup>*</sup><sup>1</sup></span
+              >
+            </li>
+            <li>
+              <span
+                ><a
+                  href=""
+                  rel="noreferrer"
+                  target="_blank"
+                  >Xuelong Li</a
+                ><sup>2</sup></span
+              >
+            </li>
+            
+          </ul>
+        </section>
+        <section class="affiliations">
+          <ul>
+            <li><sup>1</sup>School of Artificial Intelligence, OPtics and ElectroNics (iOPEN), Northwestern Polytechnical University, Xi’an 710072, P. R. China,</li>
+            <li><sup>2</sup>Institute of Artificial Intelligence (TeleAI), China Telecom, P. R. China,</li>
+            <li><sup>*</sup>Indicates Equal Contribution</li>
+          </ul>
+        </section>
+        <section class="conference">
+          <h3>
+          IJCAI 2025
+          </h3>
+        </section>
+        <section class="links">
+          <ul>
+            <a href="" rel="noreferrer" target="_blank">
+              <li>
+                <span class="icon"> <img src="./public/paper.svg" /> </span
+                ><span>Paper</span>
+              </li>
+            </a>
+<!--            <a-->
+<!--              href="https://youtu.be/ZjRYlRRV9IA"-->
+<!--              rel="noreferrer"-->
+<!--              target="_blank"-->
+<!--            >-->
+<!--              <li>-->
+<!--                <span class="icon"> <img src="./public/video.svg" /> </span-->
+<!--                ><span>Video</span>-->
+<!--              </li>-->
+<!--            </a>-->
+            <a
+              href=""
+              rel="noreferrer"
+              target="_blank"
+            >
+              <li>
+                <span class="icon">
+                  <img src="./public/github.svg" />
                 </span>
-
-                <!-- ArXiv abstract Link -->
-                <!-- <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span> -->
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
+                <span>Code</span>
+              </li>
+            </a>
+            <!-- <a><li>Video</li></a> -->
+          </ul>
+        </section>
+        <a class="anchor" id="abstract-a"></a>
+        <h2>Abstract</h2>
+        <p class="abstract" style="font-family: 'Times New Roman', Arial; text-align: justify">
             Ensuring the safety of high-speed agent in dynamic adversarial environments, such as pursuit-evasion games with target-purchase and obstacle-avoidance, is a significant challenge. Existing reinforcement learning methods often fail to balance safety and reward under strict safety constraints and diverse environmental conditions. To address these limitations, this paper proposes a novel zero-constraint-violation recovery RL framework tailored for high-speed uav pursuit-evasion combat games. The framework includes three key innovations. (1) An extendable multi-step reach-avoid theory: we provide a zero-constraint-violation safety guarantee for multi-strategy reinforcement learning and enabling early danger detection in high speed game. (2) A masked-attention recovery strategy: we introduce a padding-mask attention architecture to handle spatiotemporal variations in dynamic obstacles with varying threat levels. (3) Experimental validation: we validate the framework in obstacle-rich pursuit-evasion scenarios, demonstrating its superiority through comparison with other algorithm and ablation studies. Our approach also shows potential for extension to other rapid-motion tasks and more complex hazardous scenarios.
+        </p>
+      </section>
+      <!-- <section class="head-media">
+        <div style="display: flex; width: 100%; height:auto; margin: auto; justify-content: center; align-items: center">
+          <img
+          style="width: 50%; height: auto"
+          src="./public/images/bar.png"
+          />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p class="caption" style="text-align: justify; font-family: 'Times New Roman'; width: 40%">
+            <strong>Overall framework and performance comparison of AdaptDiffuser.</strong> It enables diffusion models to generate rich synthetic expert data using guidance from reward gradients of either seen or unseen tasks. Then, it iteratively selects high-quality data via a discriminator to fine-tune the model for self-evolving, leading to improved performance on seen tasks and better generalizability to unseen tasks.
           </p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+      </section> -->
+
+      <a class="anchor" id="tr2-a"></a>
+      <section class="details">
+        <h2>Framework of MSMAR-RL</h2>
+        <p style="font-family: 'Times New Roman',serif"> The overview of our system framework is shown in Figure. The basic structure is recovery reinforcement learning architecture, which contains one safe critic discriminator and two policy structure. The safe critic is used to judge the safe condition of the near states, with a multi-step reach avoid value learned by the agent. The two policy are responsible for selecting actions for maximum reward or keeping in safe states. <br> When the agent get observation from the environment, firstly, the safety discriminator determine the current state (safe or unsafe) using a state-safe value. Based on the value, the UAV selects either the target policy (for task completion) or the recovery policy (for avoiding entering a dangerous state) and interacts with the environment. After the interaction, the UAV receives new observations, and the process repeats, forming a closed-loop control that ensures both safety and task efficiency in dynamic environments.
+        </p>
+
+        <div style="display: flex; margin: auto; width: 95%; height: auto">
+          <img
+          style="width: 100%; height: auto"
+          src="./public/images/framework.png"
+          />
+          
+        </div>
+        <br />
 
 
 
+        <a class="anchor" id="results-a"></a>
+        <h2>Results</h2>
+
+        <h3 style="margin-bottom: 0">Performance Test</h3>
+
+        <br>
+
+        <p class="caption" style="text-align: justify; font-family: 'Times New Roman',serif; margin-top: 0; margin-bottom: 0">
+            Our experiments were conducted in two kinds of environments, including spherical obstacles and cylinder obstacles, shown in green.
+         </p>
+         
+ 
+         <p class="caption" style="text-align: justify; font-family: 'Times New Roman',serif; margin-top: 0">
+            (a) The agent uses only pursuit policy. It could tail the target uav without avoiding obstacles. (b) The agent uses our MSMAR-RL method and carefully avoids all the obstacles while chasing the target uav. (c) The agent uses pursuit policy only. It could tail the target uav without avoiding the cylindrical obstacles. (d) The agent uses our MSMAR-RL method and greatly avoids all the cylindrical obstacles while chasing the target uav.
+         </p>
+
+        <br>
+
+        <div style="display: flex; margin: auto; width: 95%; height: auto; justify-content: space-between">
+        <img
+          style="width: 45%; height: auto"
+          src="./public/images/pursuit_only_2.png"
+        />
+        <img
+          style="width: 45%; height: auto"
+          src="./public/images/MSAR.png"
+        />
+        </div>
+        <div class="col-title" style="display: flex; width: 95%; height: auto; justify-content: space-between; margin: 0; font-family: 'Times New Roman',serif">
+            <p style="margin-left: 10em">Pursuit_only</p>
+            <p style="margin-right: 8em">MSMAR-RL</p>
+          </div>
+        <br>
+
+        <div style="display: flex; margin: auto; width: 95%; height: auto; justify-content: space-between">
+        <img
+        style="width: 45%; height: auto"
+        src="./public/images/pursuit_building_1.png"
+        />
+        <img
+          style="width: 45%; height: auto"
+          src="./public/images/msar_building_1.png"
+        />
+        </div>
+
+        <div class="col-title" style="display: flex; width: 95%; height: auto; justify-content: space-between; margin: 0; font-family: 'Times New Roman',serif">
+            <p style="margin-left: 10em">Pursuit_only</p>
+            <p style="margin-right: 8em">MSMAR-RL</p>
+          </div>
 
 
-
-
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
         
-      </div>
-    </div>
-  </section> -->
-<!--End paper poster -->
 
 
-<!--BibTex citation -->
-  <!-- <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section> -->
-<!--End BibTex citation -->
 
+        <h3 style="margin-bottom: 0">Ablation Experiment</h3>
 
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+        <br>
+        
+        <p class="caption" style="text-align: justify; font-family: 'Times New Roman',serif; margin-top: 0; margin-bottom: 0">
+            The ablation experiment compares the function of attention module and multi-steps module. Besides, we replace the attention module with rnn and lstm to test the mechanism of attention.
+         </p>
+         
+         <div style="display: flex; margin: auto; width: 95%; height: auto; justify-content: space-between">
+            <img
+            style="width: 100%; height: auto"
+            src="./public/images/ablation_table.png"
+            />
         </div>
-      </div>
-    </div>
-  </div>
-</footer>
+ 
+         <p class="caption" style="text-align: justify; font-family: 'Times New Roman',serif; margin-top: 0">
+            Compared to the method without attention, MSMAR-RL has higher convergence rate than that without attention mechanism(red curve and orange curve). However, without a correct safe discriminator, the attention module would lead to a concussion in training process. This may occur because that the attention module provide better learning ability to the agent, but each exploration would lead to a danger state caused by the  maneuverability limitation of the agent. Having using the multi-step, the concussion is much less, which demonstrate the greatness of the multi-step safe discriminator.
+         </p>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
+        <div style="display: flex; margin: auto; width: 95%; height: auto; justify-content: space-between">
+            <img
+            style="width: 45%; height: auto"
+            src="./public/images/rebuttal _ablation_counts.png"
+            />
+            <img
+              style="width: 45%; height: auto"
+              src="./public/images/rebuttal_ablation_rewards.png"
+            />
+        </div>
 
+        <div class="col-title" style="display: flex; width: 95%; height: auto; justify-content: space-between; margin: 0; font-family: 'Times New Roman',serif">
+            <p style="margin-left: 10em">Dangerous Counts</p>
+            <p style="margin-right: 6em">Recovery Rewards</p>
+          </div>
+
+
+      </section>
+      <section class="citation">
+        <h2>Bibtex</h2>
+        <!-- <pre>
+<code>@inproceedings{liang2023adaptdiffuser,
+  title={AdaptDiffuser: Diffusion Models as Adaptive Self-evolving Planners},
+  author={Liang, Zhixuan and Mu, Yao and Ding, Mingyu and Ni, Fei and Tomizuka, Masayoshi and Luo, Ping},
+  booktitle={International Conference on Machine Learning},
+  pages={20725--20745},
+  year={2023},
+  organization={PMLR}
+}</code></pre> -->
+      </section>
+      <br />
+
+
+     <section class="acknowledgements">
+       <h2>Acknowledgements</h2>
+       <p style="font-family: 'Times New Roman', Arial;">
+         
+       </p>
+     </section>
+
+
+    </main>
   </body>
-  </html>
+</html>
